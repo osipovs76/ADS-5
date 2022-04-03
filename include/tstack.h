@@ -37,7 +37,7 @@ class TStack {
       throw "Stack is already full, remove some elements";
   }
 };
-#endif  // INCLUDE_TSTACKH_H-
+#endif  // INCLUDE_TSTACK_H_
 
 TStack<char, 100> stack1;
 TStack<int, 100> stack2;
