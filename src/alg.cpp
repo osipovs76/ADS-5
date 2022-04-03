@@ -41,7 +41,7 @@ std::string infx2pstfx(std::string inf) {
       pstf += inf[i];
       if (prior(inf[i + 1]) != -1)
         pstf += " ";
-    } else if (stack1.isEmpty() || prior(inf[i]) == 0 
+    } else if (stack1.isEmpty() || prior(inf[i]) == 0 ||
              prior(inf[i]) > prior(stack1.get())) {
       stack1.push(inf[i]);
     } else if (prior(inf[i]) <= prior(stack1.get())) {
